@@ -1,23 +1,36 @@
 body {
-    color: #165c7c;
+    color: #000000;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
 }
 
-header {
-border: 1px solid #FF0000;
+header{
+    background-image: url('./img/fondoheader.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 300px; 
+    border: 1px solid #000000;
+    padding-left: 1pc;
+}
+
+.header-quote{
+    font-family: 'Times New Roman', Times, serif;
 }
 
 main {
-border: 1px solid #FF0000;
+    border: 1px solid #000000;
+    padding-left: 1pc;
 }
 
 footer {
-border: 1px solid #FF0000;
+border: 1px solid #000000;
 }
 
 h1 {
-color: #FF0000;
+color: #000000;
 }
 
 h2 {
-color: #2cb025;
+color: #000000;
 }
