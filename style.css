@@ -1,6 +1,7 @@
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #000000;
+    background-color:#E4F6FF ;
 }
 
 header{
@@ -8,17 +9,22 @@ header{
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
-    height: 350px; 
-    border: 1px solid #000000;
+    height: 360px; 
     padding-left: 1pc;
 }
 
 header div,img{
     display: inline-block;
+    margin-right: 200px;
 }
 
 header img {
-    padding-bottom: 7pc;
+    border-radius: 50%; 
+    width: 150px; /* Tamaño de la imagen */
+    height: 150px; /* Tamaño de la imagen */
+    position: absolute; /* Posiciona la imagen de manera absoluta dentro del header */
+    bottom: 460px; /* Posiciona la imagen desde la parte inferior del header */
+    right: 20px; /* Posiciona la imagen desde el lado derecho */
 }
 
 .header-quote{
@@ -26,28 +32,18 @@ header img {
 }
 
 main, footer {
-    background-color: #E4F6FF;
-    border: 1px solid #000000;
     padding-left: 1pc;
 }
 
-.about-title img,h2{
+.main-title img,h2{
     display: inline-block;
     vertical-align: middle; /* pa centrar verticalmente img y h2*/
 }
 
-.about-title img{
+.main-title img{
     margin-right: 10px; /* gap pa que no esté al lado del img */
 }
 
-.education-title img,h2{
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.education-title img{
-    margin-right: 10px;
-}
 
 .education-div{
     color: #000000;
@@ -55,38 +51,44 @@ main, footer {
     display: inline-block;
 }
 
-.skills-title img,h2{
+
+main a {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 2px solid #ccc;
+}
+
+section {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin: 20px;
+    padding: 20px;
+}
+
+span {
+    color: rgb(0, 76, 255);
+    font-weight: bold;
+}
+
+
+footer {
+    background-image: url('./img/fondoheader.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none; /* Elimina cualquier guion o subrayado */
+}
+
+footer img {
     display: inline-block;
     vertical-align: middle;
-}
-
-.skills-title img{
-    margin-right: 10px;
-}
-
-.experience-title img,h2{
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.experience-title img{
-    margin-right: 10px;
-}
-
-.books-title img,h2{
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.books-title img{
-    margin-right: 10px;
-}
-
-
-h1 {
-color: #000000;
-}
-
-h2 {
-color: #000000;
+    margin: 0 5px; /* Reduce el margen entre las imágenes */
+    width: 30px; /* Asegúrate de que el tamaño de las imágenes sea consistente */
+    height: 31px;
 }
