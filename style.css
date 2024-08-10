@@ -1,61 +1,8 @@
 body {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #000000;
     background-color:#E4F6FF ;
-}
-
-header{
-    background-image: url('./img/fondoheader.jpg');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    height: 360px; 
     padding-left: 1pc;
-}
-
-header div,img{
-    display: inline-block;
-    margin-right: 200px;
-}
-
-header img {
-    border-radius: 50%; 
-    width: 150px; /* Tamaño de la imagen */
-    height: 150px; /* Tamaño de la imagen */
-    position: absolute; /* Posiciona la imagen de manera absoluta dentro del header */
-    bottom: 460px; /* Posiciona la imagen desde la parte inferior del header */
-    right: 20px; /* Posiciona la imagen desde el lado derecho */
-}
-
-.header-quote{
-    font-family: 'Times New Roman', Times, serif;
-}
-
-main, footer {
-    padding-left: 1pc;
-}
-
-.main-title img,h2{
-    display: inline-block;
-    vertical-align: middle; /* pa centrar verticalmente img y h2*/
-}
-
-.main-title img{
-    margin-right: 10px; /* gap pa que no esté al lado del img */
-}
-
-
-.education-div{
-    color: #000000;
-    width: 500px;
-    display: inline-block;
-}
-
-
-main a {
-    color: #000000;
-    text-decoration: none;
-    border-bottom: 2px solid #ccc;
 }
 
 section {
@@ -65,30 +12,94 @@ section {
     padding: 20px;
 }
 
-span {
-    color: rgb(0, 76, 255);
-    font-weight: bold;
-}
-
-
-footer {
+/*HEADER*/
+header, footer{
     background-image: url('./img/fondoheader.jpg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
+}
+
+header{
+    height: 360px;
+}
+
+#header-inf, #img-header{
+    line-height: 0.8;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    font-size: 16px;
+}
+
+header img {
+    border-radius: 50%; 
+    width: 200px; 
+    height: 200px; 
+    position: absolute;
+    bottom: 460px; 
+    right: 20px; 
+}
+
+#header-quote{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*MAIN*/
+.main-title img,h2{
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+.main-title img{
+    margin-right: 10px; 
+}
+
+#main-left ul, #main-books ul{
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+.main-div-left, .main-div-right{
     color: #000000;
+    display: inline-block;
+}
+
+.main-div-right li{
+    list-style: none;
+}
+
+#skills-program ul li:first-child,
+#skills-program ul li:last-child,
+#skills-number ol li:first-child,
+#skills-number ol li:last-child
+{
+    font-weight: bold;
+    color: #1e3fd0;
+}
+
+main a {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 2px solid #ccc;
+}
+
+/*FOOTER*/
+
+footer {
     text-align: center;
     padding: 20px;
 }
 
 footer a {
-    text-decoration: none; /* Elimina cualquier guion o subrayado */
+    text-decoration: none; 
 }
 
 footer img {
     display: inline-block;
     vertical-align: middle;
-    margin: 0 5px; /* Reduce el margen entre las imágenes */
-    width: 30px; /* Asegúrate de que el tamaño de las imágenes sea consistente */
+    margin: 0 5px;
+    width: 30px; 
     height: 31px;
 }

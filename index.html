@@ -3,60 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <title>CV María Camila Gómez</title>
 </head>
 <body>
+
     <header>
-        <div>
-            <h1>María Camila Gómez Blanquicett</h1>
+        <div id="header-inf">
+            <h1>María Camila Gómez</h1>
             <h2>Email: Blanquicettm@uninorte.edu.co</h2> <br>
             <h2>Semester: 8th</h2> <br>
             <h2>Phone Number: 304-2655-257</h2>
-            <blockquote class="header-quote">
-                <q>
-                    A computer is like a violin.” You can imagine it making beautiful music, but you have to learn how to play it.
-                </q> <br>
-                <cite>Bill Gates</cite>
-            </blockquote>
         </div>
-        <img src="img/profilepic.jpeg" alt="My profile picture" width="100px" height="100px" />
+        <div id="img-header">
+            <img src="img/profilepic.jpeg" alt="My profile picture" width="100px" height="100px" />
+        </div>
+
+        <blockquote id="header-quote">
+            <q>
+                A computer is like a violin. You can imagine it making beautiful music, but you have to learn how to play it.
+            </q> <br>
+            <cite>- Bill Gates</cite>
+        </blockquote>
     </header>
+
+
     <main>
+
         <section>
             <div class="main-title">
                 <img src="./img/abouticon.svg" alt="About icon">
                 <h2>About</h2>
             </div>
             <p>
-                As a dedicated Systems Engineering student, I am committed to achieving academic excellence and passionately advocate for the empowerment of women in the technological field. Serving as the president of the W-STEM group, I have honed my leadership abilities, developed strong project management skills, and fostered a collaborative environment that thrives on teamwork. This role has not only allowed me to lead initiatives that promote diversity in technology but also helped me cultivate a network of professionals and peers who are equally passionate about these goals.
-
-                My academic and extracurricular experiences have fueled my deep interest in software development, artificial intelligence, and cybersecurity. I am proficient in programming languages such as Python, Java, and JavaScript, which I have applied in various projects ranging from web development to complex data analysis tasks. Additionally, I possess a solid understanding of database management and network administration.
-
-                Beyond my technical skills, I am highly adaptable and capable of working effectively both in team settings and independently. I am constantly seeking opportunities for continuous learning, staying updated with the latest advancements in technology to ensure my professional development keeps pace with the rapidly evolving industry. My strong focus on personal growth, combined with a passion for technology and inclusivity, drives me to excel in all my endeavors.    
+                As a dedicated Systems Engineering student, I am committed to achieving academic excellence and passionately advocate for the empowerment of women 
+                in the technological field. Serving as the president of the W-STEM group, I have honed my leadership abilities, developed strong project management skills, 
+                and fostered a collaborative environment that thrives on teamwork. This role has not only allowed me to lead initiatives that promote diversity in 
+                technology but also helped me cultivate a network of professionals and peers who are equally passionate about these goals.
             </p>
         </section>
+
         <section>
             <div class="main-title">
                 <img src="./img/educationicon.svg" alt="Education icon">
                 <h2>Education</h2>
             </div>
-            <div class="education-div">
-                <ol>
-                    <li>Certified International tutor Training Program Certification.</li>
-                    <li>Certificate Program for Student Peers</li>
-                    <li>Power BI MinTic course</li>
-                </ol>
-            </div>
-            <div class="education-div">
-                <p>
-                    2023 <br>
-                    2022 <br>
-                    2024 <br>  
-                </p>
+            <div id="main-divided">
+                <div id="main-left" class="main-div-left">
+                    <ul>
+                        <li>Certified International Tutor Training Program Certification.</li>
+                        <li>Certificate Program for Student Peers</li>
+                        <li>Power BI MinTic course</li>
+                    </ul>
+                </div>
+                <div class="main-div-right">
+                    <ol>
+                        <li>2023</li>
+                        <li>2022</li>
+                        <li>2024</li>
+                    </ol>
+                </div>
             </div>
         </section>
+
         <section>
             <div class="main-title">
                 <img src="./img/skillsicon.svg" alt="Skills icon">
@@ -72,14 +81,28 @@
             </details>
             <details>
                 <summary>Programming Languages</summary>
-                <ul>
-                    <li><span>Python</span></li>
-                    <li>Java</li>
-                    <li><span>Javascript</span></li>
-                    <li>SQL</li>
-                    <li>HTML and CSS</li>
-                    <li>C</li>
-                </ul>
+                <div class="main-divided-skills">
+                    <div id= "skills-program" class="main-div-left">
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>Javascript</li>
+                            <li>SQL</li>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                        </ul>
+                    </div>
+                    <div id="skills-number" class="main-div-right">
+                        <ol>
+                            <li>|4.5</li>
+                            <li>|3.0</li>
+                            <li>|2.0</li>
+                            <li>|3.5</li>
+                            <li>|4.3</li>
+                            <li>|4.5</li>
+                        </ol>
+                    </div>
+                </div>
             </details>
             <details>
                 <summary>Soft Skills</summary>
@@ -91,32 +114,45 @@
                 </ul>
             </details>
         </section>
+
         <section>
             <div class="main-title">
                 <img src="./img/experienceicon.svg" alt="Experience icon">
                 <h2>Experience</h2>
             </div>
-            <h3>Discrete Mathematics Tutor - 2023</h3>
+            <h3>Veterinary Solutions - Semester VII</h3>
             <p>
-                I provided one-on-one tutoring to undergraduate students in topics such as logic, set theory, algorithms, graphs, and combinatorics, designed and conducted group study sessions to help students understand complex concepts and develop problem-solving skills, and evaluated students' progress while offering constructive feedback to improve their performance.
+                Website designed for a veterinarian where customers can 
+                buy different products, see nearby veterinaries and contact 
+                directly with the store.
             </p>
-            <h3>Calculus Tutor - 2022</h3>
+            <h3>Petropoly - Semester IV</h3>
             <p>
-                I provided individual and group tutoring to undergraduate students in differential, integral, and vector calculus, designing and conducting study sessions focused on the understanding and application of key concepts such as derivatives, integrals, series, and vector fields.
+                Monopoly game with Colombian version
+            </p>
+            <h3>Videogame - Semester II</h3>
+            <p>
+                Video game designed to be played on computer, it consists of three 
+                different worlds with three levels of difficulty. 
             </p>
         </section> 
+
         <section>
             <div class="main-title">
                 <img src="./img/booksicon.svg" alt="Books of interest icon">
                 <h2>Books of Interest</h2>
             </div>
-            <ol>
-                <li><a href="https://www.planetadelibros.com.mx/libros_contenido_extra/41/40413_1_PrimerCapitulo_HabitosAtomicos.pdf">Hábitos Atómicos</a></li>
-                <li><a href="https://www.centrointerdisciplinario.com.mx/pdf/10_Pensar_como_einstein_scott_thorpe.pdf">Cómo pensar como einstein</a></li>
-                <li><a href="https://www.philosophia.cl/biblioteca/orwell/1984.pdf">1984</a></li>
-            </ol>
+            <div id="main-books">
+                <ul>
+                    <li><a href="https://www.planetadelibros.com.mx/libros_contenido_extra/41/40413_1_PrimerCapitulo_HabitosAtomicos.pdf">Hábitos Atómicos, James Clear</a></li>
+                    <li><a href="https://www.centrointerdisciplinario.com.mx/pdf/10_Pensar_como_einstein_scott_thorpe.pdf">Cómo pensar como einstein, Scott Thorpe</a></li>
+                    <li><a href="https://www.philosophia.cl/biblioteca/orwell/1984.pdf">1984, George Orwell</a></li>
+                </ul>
+            </div>
         </section>
+
     </main>
+
     <footer>
         <h3>&copy; 2024 By María Camila Gómez Blanquicett. All rights reserved.</h3>
         <a href="https://www.linkedin.com/feed/">
