@@ -55,5 +55,5 @@ open index.html
 ```
 
 
-📋 License
+## 📋 License
 Feel free to use, modify, and distribute this code as per the terms of the license. 👀
